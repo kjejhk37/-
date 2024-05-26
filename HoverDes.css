@@ -1,7 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#Main {
+  margin: 10px 10px;
+}
+
 div[class*='Box'] {
   display: inline-block;
   position: absolute;
-  z-index: 2;
 }
 
 div[class*='trigger'] {
@@ -9,7 +17,7 @@ div[class*='trigger'] {
   width: 100px;
   height: 100px;
   outline: 3px solid red;
-  position: static;
+  position: absolute;
   color: white;
   font-weight: 500;
   font-size: 20px;
@@ -22,13 +30,11 @@ div[class*='Text'] {
 
 div[class*='hiddenBox'] {
   display: inline-block;
-  visibility: hidden;
+  display: none;
   position: absolute;
   transform: translate(130px);
   width: 100%;
   height: 100%;
-
-  z-index: 4;
 }
 
 div[class*='hidden-Font'] {
@@ -43,7 +49,7 @@ div[class*='hidden-Font'] {
   font-size: 20px;
   font-weight: 500;
   outline: 2px solid white;
-  z-index: 5;
+  z-index: 6;
 }
 
 div[class*='hidden-Image'] {

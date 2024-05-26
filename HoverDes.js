@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', function () {
     trigger.addEventListener('mouseenter', () => {
       const relatedHidden = trigger.querySelectorAll(`[class*="hidden"]`);
       relatedHidden.forEach((hidden) => {
-        hidden.style.visibility = 'visible';
+        hidden.style.display = 'inline-block';
       });
     });
 
     trigger.addEventListener('mouseleave', () => {
       const relatedHidden = trigger.querySelectorAll(`[class*="hidden"]`);
       relatedHidden.forEach((hidden) => {
-        hidden.style.visibility = 'hidden';
+        hidden.style.display = 'none';
       });
     });
   });
